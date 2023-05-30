@@ -1,0 +1,48 @@
+#gameboard {
+	width: 320px;
+	height: 320px;
+	display: flex;
+	flex-wrap: wrap; /*So that the squares wrap within the game board*/
+}
+
+
+.square {
+	width: 40px; /*An eighth of the gameboard height/width*/
+	height: 40px;
+	position: relative;
+}
+
+/* Makes all the svgs uniform in size */
+.square svg {
+	height: 30px;
+	width: 30px;
+	margin: 5px; /* This makes up for the 10px not being filled in the 40px square */
+	position: relative;
+	z-index: -9; /* z-index specifies the stack order of an element. It only works on positioned elements */
+}
+
+path {
+	position: relative;
+	z-index: -10;
+}
+
+.piece {
+	position: relative;
+	z-index: 9; /* This makes sure that when you hover over a square, the piece is "in front" of the square */
+}
+
+.beige {
+	background-color: burlywood;
+}
+
+.brown {
+	background-color: firebrick;
+}
+
+.black {
+	fill: black;
+}
+
+.white {
+	fill: lightgoldenrodyellow;
+}

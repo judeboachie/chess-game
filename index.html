@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chess</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	
+	<div id="gameboard"></div>
+
+	<!--Displays whose turn it is-->
+	<p id="player-turn">It is <span id="player"></span>'s turn.</p>
+
+	<!--Displays extra info if needed-->
+	<p id="info-display"></p>
+
+	<!--We want the contents of pieces.js before app.js because that's where they are being defined-->
+	<script src="pieces.js"></script> 
+	<script src="app.js"></script>	
+</body>
+</html>
